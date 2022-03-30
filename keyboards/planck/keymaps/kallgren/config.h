@@ -30,3 +30,6 @@
 #define NO_AUTO_SHIFT_ALPHA
 #define FIRMWARE_VERSION u8"Ex5zG/w6wVV"
 #define RGB_MATRIX_STARTUP_SPD 60
+
+/* CUSTOM: */
+#define COMBO_COUNT 4
