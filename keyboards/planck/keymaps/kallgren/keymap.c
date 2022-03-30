@@ -866,15 +866,32 @@ qk_tap_dance_action_t tap_dance_actions[] = {
         [DANCE_14] = ACTION_TAP_DANCE_FN_ADVANCED(on_dance_14, dance_14_finished, dance_14_reset),
 };
 
-/* CUSTOM: */
-const uint16_t PROGMEM wfp_combo[] = {KC_W, KC_F, KC_P, COMBO_END};
+/* COMBOS: */
+// Big keys
+const uint16_t PROGMEM wf_combo[] = {KC_W, KC_F, COMBO_END};
 const uint16_t PROGMEM rst_combo[] = {MT(MOD_LCTL, KC_R), MT(MOD_LALT, KC_S), MT(MOD_LGUI, KC_T), COMBO_END};
-const uint16_t PROGMEM luy_combo[] = {KC_L, KC_U, KC_Y, COMBO_END};
+const uint16_t PROGMEM uy_combo[] = {KC_U, KC_Y, COMBO_END};
 const uint16_t PROGMEM nei_combo[] = {MT(MOD_RGUI, KC_N), MT(MOD_RALT, KC_E), MT(MOD_RCTL, KC_I), COMBO_END};
 
+// Arrows
+const uint16_t PROGMEM lu_combo[] = {KC_L, KC_U, COMBO_END};
+const uint16_t PROGMEM ln_combo[] = {KC_L, MT(MOD_RGUI, KC_N), COMBO_END};
+const uint16_t PROGMEM ue_combo[] = {KC_U, MT(MOD_RALT, KC_E), COMBO_END};
+const uint16_t PROGMEM mn_combo[] = {KC_M, MT(MOD_RGUI, KC_N), COMBO_END};
+const uint16_t PROGMEM ne_combo[] = {MT(MOD_RGUI, KC_N), MT(MOD_RALT, KC_E), COMBO_END};
+const uint16_t PROGMEM ei_combo[] = {MT(MOD_RALT, KC_E), MT(MOD_RCTL, KC_I), COMBO_END};
+const uint16_t PROGMEM nu_combo[] = {MT(MOD_RGUI, KC_N), KC_U, COMBO_END};
+
 combo_t key_combos[COMBO_COUNT] = {
-    COMBO(wfp_combo, KC_TAB),
+    COMBO(wf_combo, KC_TAB),
     COMBO(rst_combo, KC_ESC),
-    COMBO(luy_combo, KC_BSPACE),
+    COMBO(uy_combo, KC_BSPACE),
     COMBO(nei_combo, KC_ENTER),
+    COMBO(lu_combo, KC_UP),
+    COMBO(ln_combo, KC_UP),
+    COMBO(nu_combo, KC_UP),
+    COMBO(ue_combo, KC_UP),
+    COMBO(mn_combo, KC_LEFT),
+    COMBO(ne_combo, KC_DOWN),
+    COMBO(ei_combo, KC_RIGHT),
 };

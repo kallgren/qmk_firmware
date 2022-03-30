@@ -32,4 +32,4 @@
 #define RGB_MATRIX_STARTUP_SPD 60
 
 /* CUSTOM: */
-#define COMBO_COUNT 4
+#define COMBO_COUNT 11
