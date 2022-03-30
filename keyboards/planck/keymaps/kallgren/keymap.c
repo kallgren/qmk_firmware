@@ -3,35 +3,11 @@
 #include "muse.h"
 #endif
 #include "eeprom.h"
-#include "keymap_german.h"
 #include "keymap_nordic.h"
-#include "keymap_french.h"
-#include "keymap_spanish.h"
-#include "keymap_hungarian.h"
 #include "keymap_swedish.h"
 #include "keymap_br_abnt2.h"
-#include "keymap_canadian_multilingual.h"
-#include "keymap_german_ch.h"
-#include "keymap_jp.h"
-#include "keymap_korean.h"
 #include "keymap_bepo.h"
-#include "keymap_italian.h"
-#include "keymap_slovenian.h"
-#include "keymap_lithuanian_azerty.h"
-#include "keymap_danish.h"
-#include "keymap_norwegian.h"
-#include "keymap_portuguese.h"
-#include "keymap_contributions.h"
-#include "keymap_czech.h"
-#include "keymap_romanian.h"
-#include "keymap_russian.h"
-#include "keymap_uk.h"
-#include "keymap_estonian.h"
-#include "keymap_belgian.h"
 #include "keymap_us_international.h"
-#include "keymap_croatian.h"
-#include "keymap_turkish_q.h"
-#include "keymap_slovak.h"
 
 #define KC_MAC_UNDO LGUI(KC_Z)
 #define KC_MAC_CUT LGUI(KC_X)
@@ -93,8 +69,8 @@ enum planck_layers {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BASE] = LAYOUT_planck_grid(
     KC_TAB,         KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_BSPACE,
-    KC_ESCAPE,      KC_A,           KC_S,           KC_D,           KC_F,           KC_G,           KC_H,           KC_J,           KC_K,           KC_L,           SE_OSLH,        KC_ENTER,
-    KC_LSHIFT,      KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,           KC_N,           KC_M,           SE_AA,          SE_ADIA,        KC_COMMA,       MT(MOD_RSFT, KC_DOT),
+    KC_ESCAPE,      KC_A,           KC_S,           KC_D,           KC_F,           KC_G,           KC_H,           KC_J,           KC_K,           KC_L,           SE_ODIA,        KC_ENTER,
+    KC_LSHIFT,      KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,           KC_N,           KC_M,           SE_ARNG,          SE_ADIA,        KC_COMMA,       MT(MOD_RSFT, KC_DOT),
     TT(7),          KC_LCTRL,       KC_LALT,        KC_LGUI,        LOWER,          ALL_T(KC_SPACE),KC_NO,          RAISE,          MT(MOD_RGUI, KC_LEFT),MT(MOD_RALT, KC_DOWN),MT(MOD_RCTL, KC_UP),KC_RIGHT
   ),
 
@@ -120,9 +96,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_LAYER4] = LAYOUT_planck_grid(
-    KC_Q,           KC_W,           KC_F,           KC_P,           KC_B,           KC_NO,          KC_NO,          KC_J,           KC_L,           KC_U,           KC_Y,           SE_OSLH,
+    KC_Q,           KC_W,           KC_F,           KC_P,           KC_B,           KC_NO,          KC_NO,          KC_J,           KC_L,           KC_U,           KC_Y,           SE_ODIA,
     MT(MOD_LSFT, KC_A),MT(MOD_LCTL, KC_R),MT(MOD_LALT, KC_S),MT(MOD_LGUI, KC_T),KC_G,           KC_NO,          KC_NO,          KC_M,           MT(MOD_RGUI, KC_N),MT(MOD_RALT, KC_E),MT(MOD_RCTL, KC_I),MT(MOD_RSFT, KC_O),
-    LT(7,KC_Z),     KC_X,           KC_C,           KC_D,           KC_V,           KC_NO,          KC_NO,          KC_K,           KC_H,           SE_AA,          SE_ADIA,        TD(DANCE_0),
+    LT(7,KC_Z),     KC_X,           KC_C,           KC_D,           KC_V,           KC_NO,          KC_NO,          KC_K,           KC_H,           SE_ARNG,          SE_ADIA,        TD(DANCE_0),
     KC_NO,          KC_NO,          KC_NO,          ALL_T(KC_SPACE),LT(5,KC_TAB),   TO(0),          KC_NO,          MO(6),          KC_BSPACE,      KC_NO,          KC_NO,          KC_NO
   ),
 
@@ -134,7 +110,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_LAYER6] = LAYOUT_planck_grid(
-    KC_TAB,         SE_APOS,        SE_LPRN,        SE_RPRN,        SE_GRTR_MAC,    KC_TRANSPARENT, KC_TRANSPARENT, SE_MINS,        KC_7,           KC_8,           KC_9,           TD(DANCE_1),
+    KC_TAB,         SE_QUOT,        SE_LPRN,        SE_RPRN,        SE_RABK,    KC_TRANSPARENT, KC_TRANSPARENT, SE_MINS,        KC_7,           KC_8,           KC_9,           TD(DANCE_1),
     TD(DANCE_2),    TD(DANCE_3),    TD(DANCE_4),    TD(DANCE_5),    KC_EQUAL,       KC_TRANSPARENT, KC_TRANSPARENT, SE_PLUS,        KC_4,           KC_5,           KC_6,           KC_ENTER,
     SE_ACUT,        SE_CIRC,        SE_LBRC,        SE_RBRC,        SE_SLSH,        KC_TRANSPARENT, KC_TRANSPARENT, KC_0,           KC_1,           KC_2,           KC_3,           KC_COMMA,
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_NO,          KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT
@@ -148,7 +124,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_LAYER8] = LAYOUT_planck_grid(
-    KC_AMPR,        SE_AT,          TD(DANCE_10),   SE_SLSH,        KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, SE_BSLS_MAC,    SE_APOS,        SE_CIRC,        TD(DANCE_11),
+    KC_AMPR,        SE_AT,          TD(DANCE_10),   SE_SLSH,        KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, SE_BSLS,    SE_QUOT,        SE_CIRC,        TD(DANCE_11),
     KC_ESCAPE,      SE_LBRC,        KC_LCBR,        SE_LPRN,        KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, SE_RPRN,        KC_RCBR,        SE_RBRC,        KC_ENTER,
     SE_UNDS,        KC_TRANSPARENT, SE_GRV,         KC_LABK,        KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_RABK,        SE_ACUT,        SE_TILD,        TD(DANCE_12),
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_NO,          KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT
@@ -163,7 +139,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 };
 
-extern bool g_suspend_state;
 extern rgb_config_t rgb_matrix_config;
 
 void keyboard_post_init_user(void) {
@@ -205,7 +180,7 @@ void set_layer_color(int layer) {
 }
 
 void rgb_matrix_indicators_user(void) {
-  if (g_suspend_state || keyboard_config.disable_layer_led) { return; }
+  if (keyboard_config.disable_layer_led) { return; }
   switch (biton32(layer_state)) {
     case 1:
       set_layer_color(1);
@@ -722,7 +697,7 @@ void dance_10_finished(qk_tap_dance_state_t *state, void *user_data) {
     dance_state[10].step = dance_step(state);
     switch (dance_state[10].step) {
         case SINGLE_TAP: register_code16(SE_DQUO); break;
-        case DOUBLE_TAP: register_code16(SE_APOS); break;
+        case DOUBLE_TAP: register_code16(SE_QUOT); break;
         case DOUBLE_SINGLE_TAP: tap_code16(SE_DQUO); register_code16(SE_DQUO);
     }
 }
@@ -731,7 +706,7 @@ void dance_10_reset(qk_tap_dance_state_t *state, void *user_data) {
     wait_ms(10);
     switch (dance_state[10].step) {
         case SINGLE_TAP: unregister_code16(SE_DQUO); break;
-        case DOUBLE_TAP: unregister_code16(SE_APOS); break;
+        case DOUBLE_TAP: unregister_code16(SE_QUOT); break;
         case DOUBLE_SINGLE_TAP: unregister_code16(SE_DQUO); break;
     }
     dance_state[10].step = 0;
