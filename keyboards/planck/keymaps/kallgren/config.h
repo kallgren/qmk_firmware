@@ -17,7 +17,7 @@
 #undef MOUSEKEY_INTERVAL
 #define MOUSEKEY_INTERVAL 5
 
-#define FIRMWARE_VERSION u8"Exmln/NBm3X"
+#define FIRMWARE_VERSION u8"Exmln/nozbD"
 #define RGB_MATRIX_STARTUP_SPD 60
 
 /* CUSTOM: */
