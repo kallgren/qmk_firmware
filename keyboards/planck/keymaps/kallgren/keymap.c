@@ -62,7 +62,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BASE] = LAYOUT_planck_grid(
     KC_Q,           KC_W,           KC_F,           KC_P,           KC_B,           KC_TRANSPARENT, KC_TRANSPARENT, KC_J,           KC_L,           KC_U,           KC_Y,           SE_ODIA,
     MT(MOD_LSFT, KC_A),MT(MOD_LCTL, KC_R),MT(MOD_LALT, KC_S),MT(MOD_LGUI, KC_T),KC_G,           KC_TRANSPARENT, KC_TRANSPARENT, KC_M,           MT(MOD_RGUI, KC_N),MT(MOD_RALT, KC_E),MT(MOD_RCTL, KC_I),MT(MOD_RSFT, KC_O),
-    LT(4,KC_Z),     KC_X,           KC_C,           KC_D,           KC_V,           KC_TRANSPARENT, KC_TRANSPARENT, KC_K,           KC_H,           SE_ARNG,          SE_ADIA,        TD(DANCE_0),
+    LT(4,KC_Z),     KC_X,           KC_C,           KC_D,           KC_V,           KC_TRANSPARENT, KC_TRANSPARENT, KC_K,           KC_H,           SE_ARNG,          SE_ADIA,        LT(4,SE_DOT),
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, ALL_T(KC_SPACE),LT(_LOWER, KC_TAB),KC_TRANSPARENT, KC_NO,          LT(_RAISE, KC_ESC),KC_BSPACE,KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT
   ),
 
