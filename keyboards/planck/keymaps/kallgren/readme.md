@@ -6,7 +6,7 @@ Homerow mods
 
 Combos for symbols
 
-**Thumbs**: <kbd>space/hyper</kbd> <kbd>tab/num</kbd> | <kbd>esc/raise</kbd> <kbd>backspace</kbd>
+**Thumbs**: <kbd>space/hyper</kbd> <kbd>tab/num</kbd> | <kbd>esc/num</kbd> <kbd>backspace</kbd>
 
 ### Alpha
 ```
@@ -38,10 +38,10 @@ z   x [ c ` d   v     k   h ´ å ] ä   .
                                        
     1   2   3             1   2   3    
                                        
-              [num]                    
+              [num]/[num]              
 ```
 
-### Raise
+### Raise (unused)
 ```
                               ↑       ?
                                        
@@ -50,8 +50,6 @@ z   x [ c ` d   v     k   h ´ å ] ä   .
                           ,           _
                                        
                                        
-                                       
-                    [rai]              
 ```
 
 ### Other combos
