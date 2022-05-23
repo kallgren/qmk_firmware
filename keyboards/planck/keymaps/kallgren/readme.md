@@ -59,6 +59,8 @@ z   x [ c ` d   v     k   h ´ å ] ä   .
 
 <kbd>n</kbd><kbd>e</kbd><kbd>i</kbd> = ENTER
 
+<kbd>y</kbd><kbd>ö</kbd> = BACKSPACE
+
 #### Split combos
 
 <kbd>n</kbd><kbd>y</kbd> = ?
@@ -67,4 +69,8 @@ z   x [ c ` d   v     k   h ´ å ] ä   .
 
 <kbd>r</kbd><kbd>t</kbd> = "
 
+<kbd>w</kbd><kbd>p</kbd> = "
+
 <kbd>n</kbd><kbd>i</kbd> = '
+
+<kbd>l</kbd><kbd>y</kbd> = '

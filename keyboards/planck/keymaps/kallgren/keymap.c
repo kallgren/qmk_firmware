@@ -636,6 +636,7 @@ const uint16_t PROGMEM nu_combo[] = {MT(MOD_RGUI, KC_N), KC_U, COMBO_END};
 /* Symbols */
 // Left hand
 const uint16_t PROGMEM wf_combo[] = {KC_W, KC_F, COMBO_END};
+const uint16_t PROGMEM wp_combo[] = {KC_W, KC_P, COMBO_END};
 const uint16_t PROGMEM fp_combo[] = {KC_F, KC_P, COMBO_END};
 
 const uint16_t PROGMEM qa_combo[] = {KC_Q, MT(MOD_LSFT, KC_A), COMBO_END};
@@ -660,7 +661,9 @@ const uint16_t PROGMEM cd_combo[] = {KC_C, KC_D, COMBO_END};
 
 // Right hand
 const uint16_t PROGMEM lu_combo[] = {KC_L, KC_U, COMBO_END};
+const uint16_t PROGMEM ly_combo[] = {KC_L, KC_Y, COMBO_END};
 const uint16_t PROGMEM uy_combo[] = {KC_U, KC_Y, COMBO_END};
+const uint16_t PROGMEM yo_combo[] = {KC_Y, SE_ODIA, COMBO_END};
 
 const uint16_t PROGMEM jm_combo[] = {KC_J, KC_M, COMBO_END};
 const uint16_t PROGMEM ln_combo[] = {KC_L, MT(MOD_RGUI, KC_N), COMBO_END};
@@ -693,6 +696,7 @@ combo_t key_combos[COMBO_COUNT] = {
     // Symbols
     COMBO(wf_combo, SE_LPRN),
     COMBO(fp_combo, SE_LCBR_FIXED),
+    COMBO(wp_combo, SE_DQUO),
 
     COMBO(qa_combo, SE_TILD),
     COMBO(wr_combo, SE_AT),
@@ -715,7 +719,9 @@ combo_t key_combos[COMBO_COUNT] = {
     COMBO(cd_combo, SE_GRV),
 
     COMBO(lu_combo, SE_RCBR_FIXED),
+    COMBO(ly_combo, SE_QUOT),
     COMBO(uy_combo, SE_RPRN),
+    COMBO(yo_combo, KC_BSPACE),
 
     COMBO(jm_combo, SE_CIRC),
     COMBO(ln_combo, SE_DLR),
