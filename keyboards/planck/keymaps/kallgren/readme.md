@@ -71,6 +71,6 @@ z   x [ c ] d   v     k   h ´ å - ä   .
 
 <kbd>w</kbd><kbd>p</kbd> = "
 
-<kbd>n</kbd><kbd>i</kbd> = '
+<kbd>n</kbd><kbd>i</kbd> = "
 
 <kbd>l</kbd><kbd>y</kbd> = '

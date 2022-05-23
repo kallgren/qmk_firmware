@@ -732,7 +732,7 @@ combo_t key_combos[COMBO_COUNT] = {
 
     COMBO(ny_combo, SE_QUES),
     COMBO(no_combo, KC_EXLM),
-    COMBO(ni_combo, SE_QUOT),
+    COMBO(ni_combo, SE_DQUO),
 
     COMBO(io_combo, SE_RABK),
 
