@@ -695,7 +695,7 @@ combo_t key_combos[COMBO_COUNT] = {
 
     // Symbols
     COMBO(wf_combo, SE_LPRN),
-    COMBO(fp_combo, SE_LCBR_FIXED),
+    COMBO(fp_combo, SE_RPRN),
     COMBO(wp_combo, SE_DQUO),
 
     COMBO(qa_combo, SE_TILD),
@@ -706,8 +706,8 @@ combo_t key_combos[COMBO_COUNT] = {
     COMBO(pt_combo, SE_UNDS),
 
     COMBO(ar_combo, SE_LABK),
-    COMBO(rs_combo, SE_MINS),
-    COMBO(st_combo, SE_EQL),
+    COMBO(rs_combo, SE_LCBR_FIXED),
+    COMBO(st_combo, SE_RCBR_FIXED),
     COMBO(tg_combo, SE_PLUS),
 
     COMBO(rt_combo, SE_DQUO),
@@ -716,11 +716,11 @@ combo_t key_combos[COMBO_COUNT] = {
     COMBO(td_combo, SE_PIPE_FIXED),
 
     COMBO(xc_combo, SE_LBRC),
-    COMBO(cd_combo, SE_GRV),
+    COMBO(cd_combo, SE_RBRC),
 
-    COMBO(lu_combo, SE_RCBR_FIXED),
+    COMBO(lu_combo, SE_GRV),
     COMBO(ly_combo, SE_QUOT),
-    COMBO(uy_combo, SE_RPRN),
+    COMBO(uy_combo, SE_EQL),
     COMBO(yo_combo, KC_BSPACE),
 
     COMBO(jm_combo, SE_CIRC),
@@ -740,5 +740,5 @@ combo_t key_combos[COMBO_COUNT] = {
     COMBO(he_combo, KC_COMMA),
 
     COMBO(ha_combo, SE_ACUT),
-    COMBO(aa_combo, SE_RBRC),
+    COMBO(aa_combo, SE_MINS),
 };
